@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
     binding.pry
     @post.name = new_name
     @post.content = new_content
-
+    @post.save
   end
 
 
