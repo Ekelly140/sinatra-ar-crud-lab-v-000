@@ -39,6 +39,7 @@ class ApplicationController < Sinatra::Base
     @post.name = new_name
     @post.content = new_content
     @post.save
+    erb :show
   end
 
 
