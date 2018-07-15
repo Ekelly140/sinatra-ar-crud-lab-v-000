@@ -36,7 +36,6 @@ class ApplicationController < Sinatra::Base
     @post = Post.find(params[:id])
     new_name = params[@post.name]
     new_content = params[@post.content]
-    binding.pry
     @post.name = new_name
     @post.content = new_content
     @post.save
